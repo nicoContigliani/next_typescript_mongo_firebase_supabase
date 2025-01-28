@@ -2,6 +2,8 @@ import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 import { Almarai } from "next/font/google";
 
+const data = process.env.NEXT_PUBLIC_FIREBASE_CONFIG
+
 const firebaseConfig = {
   apiKey: "AIzaSyCXu9fNEQkwwyKEChptQGTNBHsOyp-IqpE",
   authDomain: "llakascript.firebaseapp.com",
