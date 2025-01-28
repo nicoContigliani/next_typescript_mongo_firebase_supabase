@@ -3,7 +3,8 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     console.log("entro");
-    const uri = process.env.MONGO_URI_ATLAS || `mongodb+srv://nicocontigliani:ch8piRaA4WKxa3hi@clusterllakascript.tv2rm.mongodb.net/`;
+    console.log("🚀 ~ handler ~ process.env.MONGO_URI_ATLAS:", process.env.MONGO_URI_ATLAS)
+    const uri = process.env.NEXT_PUBLIC_MONGO_URI_ATLAS;
 
     console.log("🚀 ~ handler ~ uri:", uri);
 
